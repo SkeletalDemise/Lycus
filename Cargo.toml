@@ -23,7 +23,7 @@ poll-promise = "0.2.0"
 egui_extras = "0.21.0"
 
 # Libraries
-project_ares = "0.9.0"
+project_ares = "0.10.0"
 lemmeknow = { version = "0.7", default-features = false }
 
 [profile.release]
