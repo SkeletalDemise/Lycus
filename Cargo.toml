@@ -1,0 +1,33 @@
+[package]
+name = "lycus"
+version = "0.1.0"
+authors = ["SkeletalDemise"]
+edition = "2021"
+description = "Automated cipher analysis and decoding GUI"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/SkeletalDemise/Lycus"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "lycus"
+path = "src/main.rs"
+bench = false
+
+[dependencies]
+# egui
+eframe = "0.21.3"
+tracing-subscriber = "0.3.16"
+poll-promise = "0.2.0"
+egui_extras = "0.21.0"
+
+# Libraries
+project_ares = "0.9.0"
+lemmeknow = { version = "0.7", default-features = false }
+
+[profile.release]
+lto = "fat"
+panic = "abort"
+strip = "symbols"
+codegen-units = 1
