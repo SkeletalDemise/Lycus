@@ -24,7 +24,7 @@ egui_extras = "0.21.0"
 
 # Libraries
 project_ares = "0.10.0"
-lemmeknow = { version = "0.7", default-features = false }
+lemmeknow = { version = "0.8", default-features = false }
 
 [profile.release]
 lto = "fat"
