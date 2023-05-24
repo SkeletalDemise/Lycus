@@ -20,7 +20,7 @@ bench = false
 eframe = "0.21.3"
 tracing-subscriber = "0.3.16"
 poll-promise = "0.2.0"
-egui_extras = "0.21.0"
+egui_extras = "0.22.0"
 
 # Libraries
 project_ares = "0.10.0"
